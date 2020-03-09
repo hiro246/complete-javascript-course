@@ -39,7 +39,7 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
     //3. Update the round score IF the rolled number was NOT a 1
     if (dice !== 1) {
         //Add score
-        roundscore += dice;
+        roundScore += dice;
         document.querySelector('#current-' + activePlayer).textContent = roundScore;
     } else {
         //Next player
@@ -52,7 +52,10 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
         document.querySelector('.player-0-panel').classList.toggle('active');
         document.querySelector('.player-1-panel').classList.toggle('active');
 
-        document.querySelector('.dice').syle.display = 'none'
+        // document.querySelector('.player-0-panel').classList.remove('active');
+        // document.querySelector('.player-1-panel').classList. add('active');
+
+        document.querySelector('.dice').style.display = 'none';
 
     }
 
